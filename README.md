@@ -1,25 +1,35 @@
 # Glitch Clocks
 
-ESP32 sketch that drives up to four clock sync lanes for DC 24V 1-minute reverse impulse slave clocks using two L298N H-bridges. It acts like a master clock but instead of accurate timekeeping, it is intended for art installation use. Each of the clock lines can support multiple clocks and runs a base tempo with small variantions and occasional glitch effects.
+ESP32 sketch that drives up to four clock sync lanes for DC 24V 1-minute reverse impulse slave clocks using two L298N H-bridges. It acts like a master clock but instead of accurate timekeeping, it is intended for art installation use. Each of the clock lanes can support multiple clocks and runs a base tempo with small variantions and occasional glitch effects.
 
-Depending on the power, it's estimated that ~80 clocks in total would still be feasible (and awesome), but I'm using only three clocks in my installation.
+Depending on the power, it's estimated that ~80 clocks in total would still be feasible (and awesome), but I was only using three clocks in my installation at the time.
 
 The art piece was first presented in [Reformi Art Arkkivisio](https://www.reformi.art/en) urban arts exhibition in 2025. It's a part of a series of my ongoing open source art project dubbed CTRL-ART-DEL.
 
 ## Video and pics
 
-(TBD)
+Three slave clocks connected to the master clock:
+
+![Glitch Clocks in the Reformi Art Arkkivisio exhibition](/media/glitch-clocks-01.jpg)
+
+The master clock was built inside an old central radio unit:
+
+![Glitch Clocks in the Reformi Art Arkkivisio exhibition](/media/glitch-clocks-02.jpg)
+
+Video TBD.
 
 ## Hardware
 
 - ESP32 dev board
 - 2x L298N (or similar) H-bridge
-- Slave clocks
 - 24V power supply for the clock coils
+- Slave clocks
 
-See [Glitch Clock schematics in Cirkit Designer](https://app.cirkitdesigner.com/project/c464c2bb-df0a-4651-a865-9290406890fa) and my blog article for complete hardware and build reference https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d (in Finnish).
+See [Glitch Clock schematics in Cirkit Designer](https://app.cirkitdesigner.com/project/c464c2bb-df0a-4651-a865-9290406890fa).
 
-![Glitch Clock schematics in Cirkit Designer](/glitch-clocks-schematics.png)
+My blog article for complete hardware and build reference https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d (in Finnish).
+
+![Glitch Clock schematics in Cirkit Designer](/media/glitch-clocks-schematics.png)
 
 ## Configure and build
 
@@ -64,7 +74,8 @@ Glitch Clocks
 
 ## Links
 
-- [Phasing clocks "simulator"](https://github.com/alatalo/phasing-clocks)
+- [Glitch Clock schematics in Cirkit Designer](https://app.cirkitdesigner.com/project/c464c2bb-df0a-4651-a865-9290406890fa)
+- [Phasing clocks web browser "simulator"](https://github.com/alatalo/phasing-clocks)
 - [Clock that needs another clock for sync, Medium blog article in Finnish about master and slave clocks](https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d)
 - [ESP32 NTP master clock gist](https://gist.github.com/alatalo/cdd7e4c48bdc5a3fbb875d33d4a6d590)
 
