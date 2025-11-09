@@ -1,12 +1,16 @@
 # Glitch Clocks
 
-ESP32 sketch that drives up to four clock sync lanes for DC 24V 1-minute reverse impulse slave clocks using two L298N H-bridges. It acts like a master clock but instead of accurate timekeeping, it is intended for art installation use. Each of the clock lanes can support multiple clocks and runs a base tempo with small variantions and occasional glitch effects.
+ESP32 sketch that drives up to four clock sync lanes for DC 24V 1-minute reverse impulse slave clocks using two L298N H-bridges. It acts like a master clock but instead of accurate timekeeping, it is intended for art installation use. Each of the clock lanes can support multiple clocks and runs a base tempo with small variations and occasional glitch effects.
 
 Depending on the power, it's estimated that ~80 clocks in total would still be feasible (and awesome), but I was only using three clocks in my installation at the time.
 
 The art piece was first presented in [Reformi Art Arkkivisio](https://www.reformi.art/en) urban arts exhibition in 2025. It's a part of a series of my ongoing open source art project dubbed CTRL-ART-DEL.
 
 ## Video and pics
+
+Video (click to open in YouTube):
+
+[![Glitch Clocks in the Reformi Art Arkkivisio exhibition](/media/glitch-clocks-video.jpg)](https://youtu.be/B35jJOndVuE "Glitch Clocks in the Reformi Art Arkkivisio exhibition")
 
 Three slave clocks connected to the master clock:
 
@@ -15,8 +19,6 @@ Three slave clocks connected to the master clock:
 The master clock was built inside an old central radio unit:
 
 ![Glitch Clocks in the Reformi Art Arkkivisio exhibition](/media/glitch-clocks-02.jpg)
-
-Video TBD.
 
 ## Hardware
 
