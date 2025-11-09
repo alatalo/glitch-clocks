@@ -17,9 +17,9 @@ The art piece was first presented in [Reformi Art Arkkivisio](https://www.reform
 - Slave clocks
 - 24V power supply for the clock coils
 
-Schematics (link TBD)
+See [Glitch Clock schematics in Cirkit Designer](https://app.cirkitdesigner.com/project/c464c2bb-df0a-4651-a865-9290406890fa) and my blog article for complete hardware and build reference https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d (in Finnish).
 
-See my blog article for complete hardware and build reference https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d (in Finnish).
+![Glitch Clock schematics in Cirkit Designer](/glitch-clocks-schematics.png)
 
 ## Configure and build
 
@@ -29,7 +29,7 @@ Build and upload using Arduino IDE.
 
 ## Serial monitoring
 
-Effect changelog is showin in the serial monitor.
+Effect changelog is show in in the serial monitor.
 
 ```sh
 Glitch Clocks
