@@ -27,11 +27,21 @@ Top part of the sketch file contains controls base tempos, pulse timing and effe
 
 Build and upload using Arduino IDE.
 
+```c++
+struct LanePins {
+  int IN1, IN2, EN;
+};
+const LanePins LANE_A_PINS = { 33, 14, 13 };
+const LanePins LANE_B_PINS = { 27, 26, 25 };
+const LanePins LANE_C_PINS = { 19, 21, 18 };
+const LanePins LANE_D_PINS = { 22, 23, 32 };
+```
+
 ## Serial monitoring
 
 Effect changelog is show in in the serial monitor.
 
-```sh
+```md
 Glitch Clocks
 [accel] to x1.25 over 10000ms
 [accel] done
