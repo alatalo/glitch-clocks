@@ -64,4 +64,4 @@ The code is written using ChatGPT 5.
 
 ## License
 
-MIT. See `LICENSE`.
+MIT. See [LICENSE](/LICENSE).
