@@ -1,8 +1,8 @@
 # Glitch Clocks
 
-ESP32 sketch that drives up to four clock sync lanes for DC 24V 1-minute reverse impulse slave clocks using two L298N H-bridges. It acts like a master clock but instead of accurate timekeeping, it is intended for art installation use. Each of the clock lanes can support multiple clocks and runs a base tempo with small variations and occasional glitch effects.
+ESP32 sketch that drives up to four clock sync lanes for DC 24V 1-minute reverse impulse slave clocks using two L298N H-bridges. It acts like a [master clock](https://gist.github.com/alatalo/cdd7e4c48bdc5a3fbb875d33d4a6d590) but instead of accurate timekeeping, it is intended for art installation use. Each of the clock lanes can support multiple clocks and runs at a base tempo with small variations and occasional glitch effects.
 
-Depending on the power, it's estimated that ~80 clocks in total would still be feasible (and awesome), but I was only using three clocks in my installation at the time.
+Depending on the power, it's estimated that ~80 slave clocks in total would still be feasible (and awesome), but I was only using three clocks and three separate clock lanes in my installation at the time.
 
 The art piece was first presented in [Reformi Art Arkkivisio](https://www.reformi.art/en) urban arts exhibition in 2025. It's a part of a series of my ongoing open source art project dubbed CTRL-ART-DEL.
 
@@ -16,7 +16,7 @@ Three slave clocks connected to the master clock:
 
 ![Glitch Clocks in the Reformi Art Arkkivisio exhibition](/media/glitch-clocks-01.jpg)
 
-The master clock was built inside an old central radio unit:
+The master clock logic was built inside an old central radio unit:
 
 ![Glitch Clocks in the Reformi Art Arkkivisio exhibition](/media/glitch-clocks-02.jpg)
 
@@ -78,7 +78,7 @@ Glitch Clocks
 
 - [Glitch Clock schematics in Cirkit Designer](https://app.cirkitdesigner.com/project/c464c2bb-df0a-4651-a865-9290406890fa)
 - [Phasing clocks web browser "simulator"](https://github.com/alatalo/phasing-clocks)
-- [Clock that needs another clock for sync, Medium blog article in Finnish about master and slave clocks](https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d)
+- [Clock that needs another clock for sync; Medium blog article in Finnish about master and slave clocks](https://medium.com/@ville.alatalo/kello-joka-tarvitsee-kellon-pysyäkseen-ajassa-4ecf6e186a1d)
 - [ESP32 NTP master clock gist](https://gist.github.com/alatalo/cdd7e4c48bdc5a3fbb875d33d4a6d590)
 
 ## Attribution
